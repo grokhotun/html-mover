@@ -1,0 +1,7 @@
+.main-title {
+    font-weight: 700;
+    font-size: 42px;
+    @include responsiveFont(42, 32, 1);
+    color: #333;
+    text-transform: uppercase;
+}

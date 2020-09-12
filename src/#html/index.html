@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "HTML-MOVER",
+    "keywords": "",
+    "description": "Демонстрационный сайт плагина"
+})
+<body>
+    <div class="wrapper">
+        <!-- Контент -->
+        <div class="content">
+            <div class="container">
+                <div class="page">
+                    <div class="page__title">Изменяй размер окна и блоки начнут меняться местами</div>
+                    <div class="page__body">
+                        <div class="page__col page__col--first">
+                            <div data-html-mover="page__col--second, first, 1400" class="block aqua">1</div>
+                            <div class="block red">2</div>
+                        </div>
+                        <div class="page__col page__col--second">
+                            <div data-html-mover="page__col--first, first, 1400" class="block red">3</div>
+                            <div class="block aqua">4</div>
+                        </div>
+                        <div class="page__col page__col--third">
+                            <div data-html-mover="page__col--fourth, first, 1400" class="block green">5</div>
+                            <div class="block purple">6</div>
+                        </div>
+                        <div class="page__col page__col--fourth">
+                            <div data-html-mover="page__col--third, first, 1400" class="block purple">7</div>
+                            <div class="block green">8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>
